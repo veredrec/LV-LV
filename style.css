@@ -1,0 +1,72 @@
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ecff33;
+  font-family: 'Nanum Pen Script', cursive;
+}
+.title {
+  font-size: 7rem;
+  color: #33acff;
+}
+.image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.points {
+  font-size: 4rem;
+  color: #1c9a38;
+}
+.lv {
+  font-size: 6rem;
+  color: #9a1c4a;
+  background-color: #77fff5;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.part-icon {
+  margin: 1rem 0;
+  width: 15rem;
+  height: 15rem;
+}
+.number {
+  background-color: #ffa533;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  width: 30%;
+  margin: 3rem auto;
+  font-size: 3rem;
+}
+.guess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 4rem;
+  border: none;
+  border-bottom: 2px solid #666;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 2rem;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: #ecff33;
+}
+.face {
+  width: 8rem;
+  height: 8rem;
+}
+.rights {
+  font-size: 0.9rem;
+  padding: 2rem;
+}
