@@ -23,7 +23,7 @@ body {
   font-size: 6rem;
   color: #9a1c4a;
   background-color: #77fff5;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   border-radius: 50%;
 }
 .icons {
@@ -34,23 +34,32 @@ body {
 }
 .part-icon {
   margin: 1rem 0;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
 }
 .number {
   background-color: #ffa533;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
   color: #fff;
-  width: 30%;
+  width: 50%;
   margin: 3rem auto;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .guess {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.go {
+  font-size: 3rem;
+  color: #666;
+  background-color: #77ff77;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  font-family: 'Nanum Pen Script', cursive;
 }
 .name {
   font-size: 4rem;
