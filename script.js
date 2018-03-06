@@ -78,10 +78,10 @@ var namesWish = [
 
 var funArr = [
   'Fight It Out!',
-  'Who Has The Peanuts?',
+  'Who Has Peanuts?',
   'How Many?',
   'Tower of Babel',
-  'One is Not Enough',
+  '1 is Not Enough',
   'Basketsocks',
   'Tweezers-It'
 ];
