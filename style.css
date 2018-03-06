@@ -8,7 +8,7 @@ body {
 }
 .title {
   font-size: 7rem;
-  color: #33acff;
+  color: #77c9ff;
 }
 .image {
   width: 7rem;
@@ -22,7 +22,7 @@ body {
 .lv {
   font-size: 6rem;
   color: #9a1c4a;
-  background-color: #77fff5;
+  background-color: #ff9277;
   padding: 0 2rem;
   border-radius: 50%;
 }
@@ -53,13 +53,13 @@ body {
 }
 .number {
   background-color: #ffa533;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 2rem;
   color: #fff;
   width: 50%;
   margin: 3rem auto;
   font-size: 4rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 .guess {
   display: flex;
@@ -70,7 +70,7 @@ body {
 .go {
   font-size: 3rem;
   color: #666;
-  background-color: #77ff77;
+  background-color: #b492e8;
   padding: 1rem;
   border-radius: 50%;
   border: none;
@@ -80,11 +80,15 @@ body {
   font-size: 4rem;
   border: none;
   border-bottom: 2px solid #666;
+  width: 60%;
   padding-bottom: 1rem;
   text-align: center;
   margin: 2rem;
   font-family: 'Nanum Pen Script', cursive;
   background-color: #ecff33;
+}
+.name:focus {
+  outline: 0;
 }
 .face {
   width: 8rem;
