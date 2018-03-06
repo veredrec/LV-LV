@@ -1,9 +1,90 @@
 // ARRAYS
-var giftsArr = ['0903', '1982', '0911', '1234'];
-var wishesArr = ['0903', '1982', '0911', '1234'];
-var funArr = ['Cup Stack', 'Take That Peanut!', 'In the Basket'];
-var namesGift = ['ian', 'yitzhak', 'daniel', 'anat'];
-var namesWish = ['ian', 'yitzhak', 'daniel', 'anat'];
+var giftsArr = [
+  '2110',
+  '1982',
+  '0310',
+  '1234',
+  '0903',
+  '1330',
+  '0911',
+  '7813',
+  '1352',
+  '6375',
+  '13149',
+  '54852',
+  '1203',
+  '39189',
+  '715',
+  '34122',
+  '220'
+];
+// 852', '193507', '1453', '1912', '132', '2694', '9654739'
+var namesGift = [
+  'ian',
+  'yitzhak',
+  'daniel',
+  'anat',
+  'randall',
+  'gal',
+  'molly',
+  'dudi',
+  'tommi',
+  'ophir',
+  'jan',
+  'omer',
+  'adam',
+  'hila',
+  'chen',
+  'merle',
+  'michal'
+];
+
+var wishesArr = [
+  '2110',
+  '1982',
+  '0310',
+  '1234',
+  '0903',
+  '1330',
+  '0911',
+  '7813',
+  '1352',
+  '6375',
+  '13149',
+  '54852',
+  '1203',
+  '39189',
+  '715',
+  '34122'
+];
+var namesWish = [
+  'ian',
+  'yitzhak',
+  'daniel',
+  'anat',
+  'randall',
+  'gal',
+  'molly',
+  'dudi',
+  'tommi',
+  'ophir',
+  'jan',
+  'omer',
+  'adam',
+  'hila',
+  'chen',
+  'merle'
+];
+
+var funArr = [
+  'Fight It Out!',
+  'Who Has The Peanuts?',
+  'How Many?',
+  'Tower of Babel',
+  'One is Not Enough',
+  'Basketsocks',
+  'Tweezers-It'
+];
 
 var currentArr;
 var name;
@@ -39,30 +120,54 @@ function getRandomFun() {
 
 function checkRandom(num) {
   if (currentArr === 'giftsArr') {
-    if (giftsArr[num] === 'done') {
-      getRandom();
+    if (
+      !!giftsArr.reduce(function(a, b) {
+        return a === b ? a : NaN;
+      })
+    ) {
+      result.textContent = 'No more secret gifts :)';
     } else {
-      result.textContent = giftsArr[num];
-      name = namesGift[num];
-      giftsArr[num] = 'done';
-      console.log('gifts ', giftsArr);
+      if (giftsArr[num] === 'done') {
+        getRandom();
+      } else {
+        result.textContent = giftsArr[num];
+        name = namesGift[num];
+        giftsArr[num] = 'done';
+        console.log('gifts ', giftsArr);
+      }
     }
   } else if (currentArr === 'wishesArr') {
-    if (wishesArr[num] === 'done') {
-      getRandom();
+    if (
+      !!wishesArr.reduce(function(a, b) {
+        return a === b ? a : NaN;
+      })
+    ) {
+      result.textContent = 'No more secret wishes :)';
     } else {
-      result.textContent = wishesArr[num];
-      name = namesWish[num];
-      wishesArr[num] = 'done';
-      console.log('wishes ', wishesArr);
+      if (wishesArr[num] === 'done') {
+        getRandom();
+      } else {
+        result.textContent = wishesArr[num];
+        name = namesWish[num];
+        wishesArr[num] = 'done';
+        console.log('wishes ', wishesArr);
+      }
     }
   } else {
-    if (funArr[num] === 'done') {
-      getRandomFun();
+    if (
+      !!funArr.reduce(function(a, b) {
+        return a === b ? a : NaN;
+      })
+    ) {
+      result.textContent = 'No more fun games :)';
     } else {
-      result.textContent = funArr[num];
-      funArr[num] = 'done';
-      console.log('fun ', funArr);
+      if (funArr[num] === 'done') {
+        getRandomFun();
+      } else {
+        result.textContent = funArr[num];
+        funArr[num] = 'done';
+        console.log('fun ', funArr);
+      }
     }
   }
 }

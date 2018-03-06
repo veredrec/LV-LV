@@ -34,8 +34,22 @@ body {
 }
 .part-icon {
   margin: 1rem 0;
+  margin-left: -200rem;
   width: 12rem;
   height: 12rem;
+  transition: all 0.4s ease-in;
+}
+.part-icon:hover {
+  transform: rotate(360deg);
+}
+.gift {
+  animation: moving-icons 2s 0.2s forwards;
+}
+.fun {
+  animation: moving-icons 2s 0.8s forwards;
+}
+.wish {
+  animation: moving-icons 2s 1.4s forwards;
 }
 .number {
   background-color: #ffa533;
@@ -45,6 +59,7 @@ body {
   width: 50%;
   margin: 3rem auto;
   font-size: 4rem;
+  letter-spacing: 0.5rem;
 }
 .guess {
   display: flex;
@@ -78,4 +93,13 @@ body {
 .rights {
   font-size: 0.9rem;
   padding: 2rem;
+}
+
+@keyframes moving-icons {
+  0% {
+    margin-left: -200rem;
+  }
+  100% {
+    margin-left: 0;
+  }
 }
