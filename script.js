@@ -80,38 +80,37 @@ var wishesArr = [
   '9654739'
 ];
 var namesWish = [
+  'gal',
   'ian',
   'yitzhak',
+  'chen',
   'daniel',
-  'anat',
-  'randall',
-  'gal',
-  'molly',
   'dudi',
-  'tommi',
-  'ophir',
+  'avi',
   'jan',
+  'molly',
   'omer',
+  'tommi',
+  'shmuel',
+  'andrew',
+  'randall',
+  'ahuva',
   'adam',
   'hila',
-  'chen',
+  'savion',
   'merle',
   'michal',
+  'anat',
   'liraz',
-  'shmuel',
   'diana',
-  'andrew',
-  'savion',
-  'ahuva',
-  'avi'
+  'ophir'
 ];
 
 var funArr = [
   'Fight It Out!',
   'Who Has Peanuts?',
   'How Many?',
-  'Tower of Babel',
-  '1 is Not Enough',
+  "Don't blow it!",
   'Basketsocks',
   'Tweezers-It',
   'Shape it!'
@@ -230,10 +229,4 @@ function addPoints() {
     winner.classList.add('winner');
   }
 }
-
-// TODO:
-// Populate all the arrays
-// shuffle second array when have all people
-// update games arrays
-// straws or cups - whatever I find, only one of them
-// change 48 for winner when I know the exact number
+// if I add a person - update 4 arrays and points for winning the game!
