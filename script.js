@@ -16,9 +16,16 @@ var giftsArr = [
   '39189',
   '715',
   '34122',
-  '220'
+  '220',
+  '852',
+  '193507',
+  '1453',
+  '1912',
+  '132',
+  '2694',
+  '9654739'
 ];
-// 852', '193507', '1453', '1912', '132', '2694', '9654739'
+// '1118', '144'
 var namesGift = [
   'ian',
   'yitzhak',
@@ -36,7 +43,14 @@ var namesGift = [
   'hila',
   'chen',
   'merle',
-  'michal'
+  'michal',
+  'liraz',
+  'shmuel',
+  'diana',
+  'andrew',
+  'savion',
+  'ahuva',
+  'avi'
 ];
 
 var wishesArr = [
@@ -55,7 +69,15 @@ var wishesArr = [
   '1203',
   '39189',
   '715',
-  '34122'
+  '34122',
+  '220',
+  '852',
+  '193507',
+  '1453',
+  '1912',
+  '132',
+  '2694',
+  '9654739'
 ];
 var namesWish = [
   'ian',
@@ -73,7 +95,15 @@ var namesWish = [
   'adam',
   'hila',
   'chen',
-  'merle'
+  'merle',
+  'michal',
+  'liraz',
+  'shmuel',
+  'diana',
+  'andrew',
+  'savion',
+  'ahuva',
+  'avi'
 ];
 
 var funArr = [
@@ -83,7 +113,8 @@ var funArr = [
   'Tower of Babel',
   '1 is Not Enough',
   'Basketsocks',
-  'Tweezers-It'
+  'Tweezers-It',
+  'Shape it!'
 ];
 
 var currentArr;
@@ -94,19 +125,6 @@ var result = document.getElementById('number');
 var gift = document.getElementById('gift');
 var wish = document.getElementById('wish');
 var fun = document.getElementById('fun');
-
-gift.addEventListener('click', function() {
-  currentArr = 'giftsArr';
-  getRandom();
-});
-wish.addEventListener('click', function() {
-  currentArr = 'wishesArr';
-  getRandom();
-});
-fun.addEventListener('click', function() {
-  currentArr = 'funArr';
-  getRandomFun();
-});
 
 function getRandom() {
   var num = Math.floor(Math.random() * giftsArr.length);
@@ -133,7 +151,6 @@ function checkRandom(num) {
         result.textContent = giftsArr[num];
         name = namesGift[num];
         giftsArr[num] = 'done';
-        console.log('gifts ', giftsArr);
       }
     }
   } else if (currentArr === 'wishesArr') {
@@ -149,8 +166,8 @@ function checkRandom(num) {
       } else {
         result.textContent = wishesArr[num];
         name = namesWish[num];
+        console.log(name);
         wishesArr[num] = 'done';
-        console.log('wishes ', wishesArr);
       }
     }
   } else {
@@ -166,11 +183,23 @@ function checkRandom(num) {
       } else {
         result.textContent = funArr[num];
         funArr[num] = 'done';
-        console.log('fun ', funArr);
       }
     }
   }
 }
+// Event listeners on icons
+gift.addEventListener('click', function() {
+  currentArr = 'giftsArr';
+  getRandom();
+});
+wish.addEventListener('click', function() {
+  currentArr = 'wishesArr';
+  getRandom();
+});
+fun.addEventListener('click', function() {
+  currentArr = 'funArr';
+  getRandomFun();
+});
 
 // Check input
 var go = document.getElementById('go');
@@ -192,12 +221,19 @@ go.addEventListener('click', function() {
 // LV points
 var points = 0;
 var lv = document.getElementById('lv');
+var winner = document.getElementById('winner');
 function addPoints() {
   points++;
   lv.textContent = points;
+  if (points === 48) {
+    winner.textContent = 'YOU ARE THE WINNER!';
+    winner.classList.add('winner');
+  }
 }
 
-// TODO: add that if all is 'done' there is a message and it stops from running
+// TODO:
 // Populate all the arrays
-// change border when focus in input
-// maybe make desktop media queries
+// shuffle second array when have all people
+// update games arrays
+// straws or cups - whatever I find, only one of them
+// change 48 for winner when I know the exact number

@@ -87,7 +87,8 @@ body {
   font-family: 'Nanum Pen Script', cursive;
   background-color: #ecff33;
 }
-.name:focus {
+.name:focus,
+.go:focus {
   outline: 0;
 }
 .face {
@@ -98,6 +99,11 @@ body {
   font-size: 0.9rem;
   padding: 2rem;
 }
+.winner {
+  font-size: 7rem;
+  color: #db35b0;
+  animation: bounce 0.3s infinite alternate;
+}
 
 @keyframes moving-icons {
   0% {
@@ -105,5 +111,14 @@ body {
   }
   100% {
     margin-left: 0;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-25px);
   }
 }
