@@ -23,9 +23,10 @@ var giftsArr = [
   '1912',
   '132',
   '2694',
-  '9654739'
+  '9654739',
+  '1118'
 ];
-// '1118', '144'
+// '144'
 var namesGift = [
   'ian',
   'yitzhak',
@@ -50,7 +51,8 @@ var namesGift = [
   'andrew',
   'savion',
   'ahuva',
-  'avi'
+  'avi',
+  'sivan'
 ];
 
 var wishesArr = [
@@ -77,7 +79,8 @@ var wishesArr = [
   '1912',
   '132',
   '2694',
-  '9654739'
+  '9654739',
+  '1118'
 ];
 var namesWish = [
   'gal',
@@ -103,7 +106,8 @@ var namesWish = [
   'anat',
   'liraz',
   'diana',
-  'ophir'
+  'ophir',
+  'sivan'
 ];
 
 var funArr = [
@@ -224,9 +228,8 @@ var winner = document.getElementById('winner');
 function addPoints() {
   points++;
   lv.textContent = points;
-  if (points === 48) {
+  if (points === 50) {
     winner.textContent = 'YOU ARE THE WINNER!';
     winner.classList.add('winner');
   }
 }
-// if I add a person - update 4 arrays and points for winning the game!
