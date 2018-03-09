@@ -112,10 +112,10 @@ var namesWish = [
 
 var funArr = [
   'Fight It Out!',
-  'Who Has Peanuts?',
+  'Who Has It?',
   'How Many?',
   "Don't blow it!",
-  'Basketsocks',
+  'Basketpoms',
   'Tweezers-It',
   'Shape it!'
 ];
@@ -169,7 +169,6 @@ function checkRandom(num) {
       } else {
         result.textContent = wishesArr[num];
         name = namesWish[num];
-        console.log(name);
         wishesArr[num] = 'done';
       }
     }
